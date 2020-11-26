@@ -5,7 +5,7 @@ let port = process.env.PORT || 3000;
 var records = [];
 const jsforce = require('jsforce');
 const conn = new jsforce.Connection({
-  // you can change loginUrl to connect to sandbox or prerelease env.
+  // you can change loginUrl to connect to sandbox 
   loginUrl : 'https://test.salesforce.com'
 });
 const { SF_USERNAME, SF_PWD_TOKEN } = process.env;
